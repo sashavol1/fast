@@ -1,0 +1,52 @@
+@import "variables.less";
+
+*::-webkit-input-placeholder {
+	color: #333;
+	opacity: 1;
+}
+*:-moz-placeholder {
+	color: #333;
+	opacity: 1;
+}
+*::-moz-placeholder {
+	color: #333;
+	opacity: 1;
+}
+*:-ms-input-placeholder {
+	color: #333;
+	opacity: 1;
+}
+
+
+@font-face {
+  font-family: 'BloggerSans';
+  src: url('../fonts/BloggerSans.eot?#iefix') format('embedded-opentype'),  url('../fonts/BloggerSans.otf')  format('opentype'),
+         url('../fonts/BloggerSans.woff') format('woff'), url('../fonts/BloggerSans.ttf')  format('truetype'), url('../fonts/BloggerSans.svg#BloggerSans') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+body input:focus:required:invalid,
+body textarea:focus:required:invalid {
+
+}
+body input:required:valid,
+body textarea:required:valid {
+
+}
+
+
+body {
+	font-size: @font-size;
+	color: #333;
+	min-width: 320px;
+	line-height: 1.5;
+    font-family: 'BloggerSans-Medium', sans-serif;
+	font-weight: normal;
+	overflow-x: hidden;
+	a {
+		&:hover, &:focus {
+			text-decoration: none;
+		}
+	}
+}
+
